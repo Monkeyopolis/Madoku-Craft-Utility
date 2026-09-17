@@ -34,7 +34,8 @@ public final class MadokuMusicSoundInstance extends AbstractSoundInstance {
 	}
 
 	@Override
-	public WeighedSoundEvents resolve(SoundManager soundManager) {
+	public WeighedSoundEvents getOrResolve(SoundManager soundManager) {
+		this.soundEvent = resolvedEvent;
 		return resolvedEvent;
 	}
 }
